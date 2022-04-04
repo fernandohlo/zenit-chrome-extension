@@ -21,7 +21,7 @@ chrome.devtools.network.onRequestFinished.addListener(
         console.groupCollapsed("%cZ%c Zenit - Send: %cevent: %c${event}", "${styleIcon}", "${styleColor}", "${styleEvent}", "${styleNormal}");
           console.log(unescape("${escape(netevent.request.url)}"));
           console.log(unescape("${escape(JSON.stringify(payload, null, 2))}"));
-          console.groupCollapsed("Currently in memory:");
+          console.groupCollapsed("Payload:");
             console.log(JSON.parse(unescape("${escape(JSON.stringify(payload))}")));
           console.groupEnd();
         console.groupEnd();
